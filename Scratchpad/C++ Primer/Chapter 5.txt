@@ -1,0 +1,96 @@
+﻿Exercise 5.1: What is a null statement? When might you use a null
+statement?
+
+	; Null statements are empty statements
+
+Exercise 5.2: What is a block? When might you might use a block?
+	
+	A block is a compound statement, syntactically {}. {} can be used to provide scope for functions
+	and explicitly set iteration bodies (ranged for loops, while loops, case-selects). 
+	i.e. The language requires single statements, but our logic sometimes needs many.
+
+Exercise 5.3: Use the comma operator (§ 4.10, p. 157) to rewrite the
+while loop from § 1.4.1 (p. 11) so that it no longer requires a block. Explain
+whether this rewrite improves or diminishes the readability of this code.
+
+	while (condition)
+		statement1, statement2;
+
+	The comma operator allows for grouping of expressions, when one expression is expected.
+	(Reminder: an expression is composed of one or more operands and yields a result). 
+	This is sometimes useful for conditional statements, but generally a poor idea to use to remove
+	block statements.
+
+
+Exercise 5.5: Using an if–else statement, write your own version of the
+program to generate the letter grade from a numeric grade.
+
+	if (grade > 50) {
+		letterGrade = "+";
+	} else {
+		letterGrade = "-";"
+	}
+
+
+Exercise 5.6: Rewrite your grading program to use the conditional operator
+(§ 4.7, p. 151) in place of the if–else statement.
+
+	grade > 50 ? letterGrade = "+" : letterGrade = "-";
+
+
+Exercise 5.8: What is a “dangling else”? How are else clauses resolved in
+C++?
+
+	A dangling else is an else-statement that proceeds multiple if-statements.
+	C++ resolves them by attaching to the inner most else-statement in its scope.
+	(i.e. you can use blocks to properly shift around an else-statement)
+
+Exercise 5.9: Write a program using a series of if statements to count the
+number of vowels in text read from cin.
+
+	#include <iostream>
+	using namespace std;
+
+	unsigned vowelCount;
+
+	char ch;
+	while (cin >> ch) {
+		if (ch == 'a')
+			vowelCount++;
+		if (ch == 'e') 
+			vowelCount++;
+		if (ch == 'i') 
+			vowelCount++;
+		if (ch == 'o') 
+			vowelCount++;
+		if (ch == 'u') 
+			vowelCount++;
+	}
+
+Exercise 5.10: There is one problem with our vowel-counting program as
+we’ve implemented it: It doesn’t count capital letters as vowels. Write a
+program that counts both lower- and uppercase letters as the appropriate
+vowel—that is, your program should count both 'a' and 'A' as part of
+aCnt, and so forth.
+
+	#include <iostream>
+	#include <cctype>
+	using namespace std;
+
+	unsigned vowelCount;
+
+	char ch;
+	while (cin >> ch) {
+		tmp = tolower(ch);
+		if (tmp == 'a')
+			vowelCount++;
+		if (tmp == 'e') 
+			vowelCount++;
+		if (tmp == 'i') 
+			vowelCount++;
+		if (tmp == 'o') 
+			vowelCount++;
+		if (tmp == 'u') 
+			vowelCount++;
+	}
+
