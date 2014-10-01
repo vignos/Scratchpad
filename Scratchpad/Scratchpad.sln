@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project Euler", "Project Eu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Data Structures", "Project1\Project1.vcxproj", "{347A4C9F-514C-4EDA-BA5E-ABFACEA9D171}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CTCI", "CTCI\CTCI.vcxproj", "{8F0C016F-BC26-4AAC-93F1-73F04D3D50DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -27,6 +29,10 @@ Global
 		{347A4C9F-514C-4EDA-BA5E-ABFACEA9D171}.Debug|Win32.Build.0 = Debug|Win32
 		{347A4C9F-514C-4EDA-BA5E-ABFACEA9D171}.Release|Win32.ActiveCfg = Release|Win32
 		{347A4C9F-514C-4EDA-BA5E-ABFACEA9D171}.Release|Win32.Build.0 = Release|Win32
+		{8F0C016F-BC26-4AAC-93F1-73F04D3D50DC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F0C016F-BC26-4AAC-93F1-73F04D3D50DC}.Debug|Win32.Build.0 = Debug|Win32
+		{8F0C016F-BC26-4AAC-93F1-73F04D3D50DC}.Release|Win32.ActiveCfg = Release|Win32
+		{8F0C016F-BC26-4AAC-93F1-73F04D3D50DC}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
